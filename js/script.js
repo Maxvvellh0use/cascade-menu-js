@@ -10,16 +10,19 @@ let menu = document.getElementById('menu');*/
 
 
 document.addEventListener("click", function (e) {
-    let lvl = document.querySelectorAll('.cascader-list, .cascader-list3');
-    let dataid = document.querySelectorAll('.cascader-list>div, .cascader-list3>div ');
+    let lvl = document.querySelectorAll('.cascader-list, .cascader-list2, .cascader-list3');
+    let dataid = document.querySelectorAll('.cascader-list>div, .cascader-list2>div, .cascader-list3>div ');
     for (let i = 0; i < lvl.length; i++)
+
         if (lvl[i].dataset.lvl === e.target.dataset.id) {
             lvl[i].style.display = 'block';
             e.target.className = 'category-drop-active';
             for (let p = 0; p < dataid.length; p++) {
                 if (dataid[p].className === 'category-drop-active') {
-                    dataid[p].className = 'category-drop';
+                    lvl[0].style.display = 'none';
+                    dataid[1].style.display = 'none';
                     e.target.className = 'category-drop-active';
+                    console.log(lvl[1]);
                 }
                 else if (dataid[p].className !== 'category-drop-active') {
                     e.target.className = 'category-drop-active';

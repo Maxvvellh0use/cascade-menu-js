@@ -18,6 +18,13 @@
     float: left;
 }
 
+.cascader-list2 {
+    margin-left:10px;
+    padding: 7px;
+    width: 250px;
+    float: left;
+}
+
 .cascader-list3 {
     margin-left:10px;
     padding: 7px;
@@ -53,7 +60,9 @@
 .cascader-list3 {
     display: none;
 }
-
+.cascader-list2 {
+    display: none;
+}
 .category-drop-active {
     cursor: pointer;
     background: rgb(242,246,247);

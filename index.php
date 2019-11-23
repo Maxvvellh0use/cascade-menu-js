@@ -19,14 +19,14 @@ include_once ('sections/header.php');
             <div data-id="6" class="category-drop">Для дома и дачи</div>
             <div data-id="7" class="category-drop">Другие категории</div>
         </div>
-        <div data-lvl="1" class="cascader-list3">
+        <div data-lvl="1" class="cascader-list2">
             <div class="category-name">Транспорт</div>
             <div data-id="8"  data-lvl="1" class="category-drop">Мотоциклы и мототехника</div>
             <div data-id="9"  data-lvl="1" class="category-drop">Грузовики и спецтехника</div>
             <div data-id="10"  data-lvl="1" class="category-drop">Водный транспорт</div>
             <div data-id="11"  data-lvl="1" class="category-drop">Запчасти и аксессуары</div>
         </div>
-        <div data-lvl="9" class="cascader-list">
+        <div data-lvl="9" class="cascader-list3">
             <div class="category-name">Грузовики и спецтехника</div>
             <div data-id="12" class="category-drop">Автобусы</div>
             <div data-id="13" class="category-drop">Автодома</div>
@@ -43,7 +43,7 @@ include_once ('sections/header.php');
             <div data-id="24" class="category-drop">Тягачи</div>
             <div data-id="25" class="category-drop">Экскаваторы</div>
         </div>
-        <div data-lvl="10" class="cascader-list">
+        <div data-lvl="10" class="cascader-list3">
             <div class="category-name">Водный транспорт</div>
             <div data-id="26" class="category-drop">Вёсельные лодки</div>
             <div data-id="27" class="category-drop">Гидроциклы</div>
@@ -53,7 +53,7 @@ include_once ('sections/header.php');
             <div data-id="31" class="category-drop">Моторные лодки</div>
             <div data-id="32" class="category-drop">Надувные лодки</div>
         </div>
-        <div data-lvl="11" class="cascader-list">
+        <div data-lvl="11" class="cascader-list3">
             <div class="category-name">Запчасти и аксессуары</div>
             <div data-id="33" class="category-drop">Аудио и видеотехника</div>
             <div data-id="34" class="category-drop">Запчасти</div>
@@ -70,7 +70,7 @@ include_once ('sections/header.php');
             <div data-id="45" class="category-drop">Шины, диски и колёса</div>
             <div data-id="46" class="category-drop">Экипировка</div>
         </div>
-        <div data-lvl="2" class="cascader-list">
+        <div data-lvl="2" class="cascader-list2">
             <div class="category-name">Недвижимость</div>
             <div data-id="47" class="category-drop">Квартиры</div>
             <div data-id="48" class="category-drop">Комнаты</div>
@@ -80,17 +80,17 @@ include_once ('sections/header.php');
             <div data-id="52" class="category-drop">Коммерческая недвижимость</div>
             <div data-id="53" class="category-drop">Недвижимость за рубежом</div>
         </div>
-        <div data-lvl="3" class="cascader-list">
+        <div data-lvl="3" class="cascader-list2">
             <div class="category-name">Работа</div>
             <div data-id="54" class="category-drop">Вакансии</div>
             <div data-id="55" class="category-drop">Резюме</div>
         </div>
-        <div data-lvl="4" class="cascader-list">
+        <div data-lvl="4" class="cascader-list2">
             <div class="category-name">Услуги</div>
             <div data-id="56" class="category-drop">Запросы на услуги</div>
             <div data-id="57" class="category-drop">Предложения услуг</div>
         </div>
-        <div data-lvl="5" class="cascader-list">
+        <div data-lvl="5" class="cascader-list2">
             <div class="category-name">Личные вещи</div>
             <div data-id="58" class="category-drop">Одежда, обувь, аксессуары</div>
             <div data-id="59" class="category-drop">Детская одежда и обувь</div>
@@ -98,7 +98,7 @@ include_once ('sections/header.php');
             <div data-id="61" class="category-drop">Часы и украшения</div>
             <div data-id="62" class="category-drop">Красота и здоровье</div>
         </div>
-        <div data-lvl="6" data-id="6" class="cascader-list">
+        <div data-lvl="6" data-id="6" class="cascader-list2">
             <div class="category-name">Для дома и дачи</div>
             <div data-id="63" class="category-drop">Бытовая техника</div>
             <div data-id="64" class="category-drop">Мебель и интерьер</div>
@@ -114,7 +114,7 @@ include_once ('sections/header.php');
             <div data-id="71" class="category-drop">Животные</div>
             <div data-id="72" class="category-drop">Для бизнеса</div>
         </div>
-        <div data-lvl="69" class="cascader-list">
+        <div data-lvl="69" class="cascader-list3">
             <div class="category-name">Бытовая электроника</div>
             <div data-id="73" class="category-drop">Аксессуары и запчасти для электроники</div>
             <div data-id="74" class="category-drop">Игры, приставки и программы</div>
@@ -126,7 +126,7 @@ include_once ('sections/header.php');
             <div data-id="80" class="category-drop">Товары для компьютера</div>
             <div data-id="81" class="category-drop">Фототехника</div>
         </div>
-        <div data-lvl="70"  class="cascader-list">
+        <div data-lvl="70"  class="cascader-list3">
             <div class="category-name">Хобби и отдых</div>
             <div data-id="82" class="category-drop">Билеты и путешествия</div>
             <div data-id="83" class="category-drop">Велосипеды</div>
@@ -136,7 +136,7 @@ include_once ('sections/header.php');
             <div data-id="87" class="category-drop">Охота и рыбалка</div>
             <div data-id="88" class="category-drop">Спорт и отдых</div>
         </div>
-        <div data-lvl="71" class="cascader-list">
+        <div data-lvl="71" class="cascader-list3">
             <div class="category-name">Животные</div>
             <div data-id="89" class="category-drop">Собаки</div>
             <div data-id="90" class="category-drop">Кошки</div>
@@ -145,7 +145,7 @@ include_once ('sections/header.php');
             <div data-id="93" class="category-drop">Другие животные</div>
             <div data-id="94" class="category-drop">Товары для животных</div>
         </div>
-        <div data-lvl="72" class="cascader-list">
+        <div data-lvl="72" class="cascader-list3">
             <div class="category-name">Для бизнеса</div>
             <div data-id="95" class="category-drop">Готовый бизнес</div>
             <div data-id="96" class="category-drop">Оборудование для бизнеса</div>
