@@ -15,12 +15,11 @@ document.addEventListener("click", function (e) {
     for (let i = 0; i < lvl.length; i++)
 
         if (lvl[i].dataset.lvl === e.target.dataset.id) {
-            lvl[i].style.display = 'block';
+
             e.target.className = 'category-drop-active';
             for (let p = 0; p < dataid.length; p++) {
                 if (dataid[p].className === 'category-drop-active') {
-                    lvl[0].style.display = 'none';
-                    dataid[1].style.display = 'none';
+                    lvl[i].style.display = 'block';
                     e.target.className = 'category-drop-active';
                     console.log(lvl[1]);
                 }
@@ -30,7 +29,7 @@ document.addEventListener("click", function (e) {
             }
         }
         else if (lvl[i].style.display === 'block' && lvl[i].className !== 'cascader-list3') {
-            lvl[i].style.display = 'none';
+            lvl[i].style.display = 'block';
         }
 });
 
