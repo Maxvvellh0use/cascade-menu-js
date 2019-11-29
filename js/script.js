@@ -10,10 +10,10 @@ let menu = document.getElementById('menu');*/
 
 
 document.addEventListener("click", function (e) {
+    let datalvl = document.getAttribute('data-lvl');
     let lvl = document.querySelectorAll('.cascader-list, .cascader-list2, .cascader-list3');
     let dataid = document.querySelectorAll('.cascader-list>div, .cascader-list2>div, .cascader-list3>div ');
     for (let i = 0; i < lvl.length; i++)
-
         if (lvl[i].dataset.lvl === e.target.dataset.id) {
 
             e.target.className = 'category-drop-active';
@@ -28,9 +28,9 @@ document.addEventListener("click", function (e) {
                 }
             }
         }
-        else if (lvl[i].dataset.id === /*тут твой код*/ && lvl[i].dataset.lvl ===  /*тут твой код*/ ) {
-            ;
-        }
+    for (let i = 0; i < datalvl.length; i++) {
+
+    }
 });
 
 /*
@@ -53,58 +53,8 @@ function closeMenu(e) {
 
 
 
-/*if (e.target.dataset.id === '1') {
-    document.getElementById('1.1').style.display = 'block';
-    document.getElementById('1').className = 'category-drop-active';
-}
-else if (e.target.dataset.id === '2') {
-    document.getElementById('1.1').style.display = 'none';
-    document.getElementById('1.2').style.display = 'block';
-    document.getElementById('2').className = 'category-drop-active';
-}
-else if (e.target.dataset.id === '3') {
-    document.getElementById('1.1').style.display = 'none';
-    document.getElementById('1.2').style.display = 'none';
-    document.getElementById('1.3').style.display = 'block';
-    document.getElementById('3').className = 'category-drop-active';
-}
-else if (e.target.dataset.id === '4') {
-    document.getElementById('1.1').style.display = 'none';
-    document.getElementById('1.2').style.display = 'none';
-    document.getElementById('1.3').style.display = 'none';
-    document.getElementById('1.4').style.display = 'block';
-    document.getElementById('4').className = 'category-drop-active';
-}
-else if (e.target.dataset.id === '5') {
-    document.getElementById('1.1').style.display = 'none';
-    document.getElementById('1.2').style.display = 'none';
-    document.getElementById('1.3').style.display = 'none';
-    document.getElementById('1.4').style.display = 'none';
-    document.getElementById('1.5').style.display = 'block';
-    document.getElementById('5').className = 'category-drop-active';
-}
-else if (e.target.dataset.id === '6') {
-    document.getElementById('1.1').style.display = 'none';
-    document.getElementById('1.2').style.display = 'none';
-    document.getElementById('1.3').style.display = 'none';
-    document.getElementById('1.4').style.display = 'none';
-    document.getElementById('1.5').style.display = 'none';
-    document.getElementById('1.6').style.display = 'block';
-    document.getElementById('6').className = 'category-drop-active';
-}
-else if (e.target.dataset.id === '7') {
-    document.getElementById('1.1').style.display = 'none';
-    document.getElementById('1.2').style.display = 'none';
-    document.getElementById('1.3').style.display = 'none';
-    document.getElementById('1.4').style.display = 'none';
-    document.getElementById('1.5').style.display = 'none';
-    document.getElementById('1.6').style.display = 'none';
-    document.getElementById('1.7').style.display = 'block';
-    document.getElementById('7').className = 'category-drop-active';
-}*/
 
-
-class Kazah {
+/*class Kazah {
     constructor (name) {
         this.name = 'Andrey'
     }
@@ -117,7 +67,7 @@ class Smolin extends Kazah {
     }
 }
 
-let man =
+let man =*/
 
 
 
