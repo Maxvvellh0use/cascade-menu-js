@@ -2,7 +2,9 @@
 .header-new-advert {
     margin: 20px;
 }
-/*ббаИаЛаИ аДаЛб аБаЛаОаКаОаВ*/
+ li {
+     list-style-type: none;
+ }
 
 #cascader-list {
     margin-left:10px;
@@ -32,6 +34,10 @@
     float: left;
 }
 
+.cascader-list3, li {
+
+}
+
 
 .category-name {
     opacity: .7;
@@ -46,6 +52,7 @@
     border-bottom: 1px solid rgba(86,61,124,.15);
     transition: 0.5s all;
     cursor: pointer;
+    marker: none;
 }
 
 .category-drop:hover {

@@ -1,73 +1,26 @@
-
-
-
-/*let categDrop = document.querySelectorAll('.category-drop');
-
-/*let dataCategDrop = categDrop.getAttribute('data-lvl');
-
-let menu = document.getElementById('menu');*/
-
-
-
-document.addEventListener("click", function (e) {
-    let datalvl = document.getAttribute('data-lvl');
+(() => {
+    let menu = document.querySelector('.category');
     let lvl = document.querySelectorAll('.cascader-list, .cascader-list2, .cascader-list3');
-    let dataid = document.querySelectorAll('.cascader-list>div, .cascader-list2>div, .cascader-list3>div ');
-    for (let i = 0; i < lvl.length; i++)
-        if (lvl[i].dataset.lvl === e.target.dataset.id) {
+    let id = document.querySelectorAll('.category-drop');
 
-            e.target.className = 'category-drop-active';
-            for (let p = 0; p < dataid.length; p++) {
-                if (dataid[p].className === 'category-drop-active') {
-                    lvl[i].style.display = 'block';
-                    e.target.className = 'category-drop-active';
-                    console.log(lvl[1]);
-                }
-                else if (dataid[p].className !== 'category-drop-active') {
-                    e.target.className = 'category-drop-active';
-                }
+    const openCatalog = event => {
+        event.preventDefault();
+        let targetElement = event.target;
+
+        let forElements = Array.from(lvl);
+        // console.log(forElements);
+        /*1) Нужно поймать элемент массива в котором дата лвл будет равен дата айди элемента, по которому
+        мы кликнули
+         2) Нужно скрывать ненужные элементы массива при переключении на другие элементы*/
+        let blockElem = forElements.filter(x => x.className !== targetElement.parentElement.className);
+        let mapElementsNone = blockElem.map(x => x.style.display = 'none');
+        let noneElements = forElements.filter(x => x.dataset.lvl === targetElement.dataset.id);
+        let mapElementsBlock = noneElements.map((x) => {
+                return [x.style.display = 'block', targetElement.className = 'category-drop-active'];
             }
-        }
-    for (let i = 0; i < datalvl.length; i++) {
+        );
 
-    }
-});
+    };
 
-/*
-function closeMenu(e) {
-    let category = document.querySelectorAll('#category');
-    let categ = document.querySelectorAll('div>.category-drop-active');
-    if ()
-}*\
-
-
-/*document.addEventListener("click", function (e) {
-    let dataid = document.querySelectorAll('.category-drop');
-    for (let p = 0; p < dataid.length; p++) {
-        alert(dataid[p].className);
-        }
-*/
-
-
-
-
-
-
-
-/*class Kazah {
-    constructor (name) {
-        this.name = 'Andrey'
-    }
-}
-
-class Smolin extends Kazah {
-    constructor (name) {
-        super(name)
-        this.age = 22;
-    }
-}
-
-let man =*/
-
-
-
+    menu.addEventListener('click', openCatalog, false);
+})();
