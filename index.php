@@ -2,6 +2,14 @@
 include_once('sections/header.php');
 ?>
 
+<html lang="ru" dir="ltr">
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <script src='/index.js'></script>
+
+</head>
+
 <h1>cascade-menu-js by MaxMaxvvellh0use</h1>
 
 <form class="create-new-catalog" id="drop-menu" method="post" novalidate>
@@ -9,8 +17,8 @@ include_once('sections/header.php');
         <h2>Новое объявление</h2>
     </div>
     <div class="category">
-        <label class="category-name">Категория</label>
         <ul id="cascader-list" data-lvl="0" class="cascader-list0">
+            <li class="category-name">Категория</li>
             <li data-id="1" class="category-drop">Транспорт</li>
             <li data-id="2" class="category-drop">Недвижимость</li>
             <li data-id="3" class="category-drop">Работа</li>
@@ -26,8 +34,7 @@ include_once('sections/header.php');
             <li data-id="10" data-lvl="1" class="category-drop">Водный транспорт</li>
             <li data-id="11" data-lvl="1" class="category-drop">Запчасти и аксессуары</li>
         </ul>
-
-        <ul data-lvl="9" class="cascader-list3">
+        <ul data-lvl="9" class="cascader-list">
             <li class="category-name">Грузовики и спецтехника</li>
             <li data-id="12" class="category-drop">Автобусы</li>
             <li data-id="13" class="category-drop">Автодома</li>
@@ -44,8 +51,8 @@ include_once('sections/header.php');
             <li data-id="24" class="category-drop">Тягачи</li>
             <li data-id="25" class="category-drop">Экскаваторы</li>
         </ul>
-        <label class="category-name">Водный транспорт</label>
         <ul data-lvl="10" class="cascader-list3">
+            <li class="category-name">Водный транспорт</li>
             <li data-id="26" class="category-drop">Вёсельные лодки</li>
             <li data-id="27" class="category-drop">Гидроциклы</li>
             <li data-id="28" class="category-drop">Гидроциклы</li>
@@ -99,7 +106,7 @@ include_once('sections/header.php');
             <li data-id="61" class="category-drop">Часы и украшения</li>
             <li data-id="62" class="category-drop">Красота и здоровье</li>
         </ul>
-        <ul data-lvl="6" class="cascader-list2">
+        <ul data-lvl="6" class="cascader-list">
             <li class="category-name">Для дома и дачи</li>
             <li data-id="63" class="category-drop">Бытовая техника</li>
             <li data-id="64" class="category-drop">Мебель и интерьер</li>
@@ -114,49 +121,47 @@ include_once('sections/header.php');
             <li data-id="70" class="category-drop">Хобби и отдых</li>
             <li data-id="71" class="category-drop">Животные</li>
             <li data-id="72" class="category-drop">Для бизнеса</li>
-            <ul data-lvl="69" class="cascader-list3">
-                <li class="category-name">Бытовая электроника</li>
-                <li data-id="73" class="category-drop">Аксессуары и запчасти для электроники</li>
-                <li data-id="74" class="category-drop">Игры, приставки и программы</li>
-                <li data-id="75" class="category-drop">Настольные компьютеры</li>
-                <li data-id="76" class="category-drop">Ноутбуки</li>
-                <li data-id="77" class="category-drop">Оргтехника и расходники</li>
-                <li data-id="78" class="category-drop">Планшеты и электронные книги</li>
-                <li data-id="79" class="category-drop">Телефоны</li>
-                <li data-id="80" class="category-drop">Товары для компьютера</li>
-                <li data-id="81" class="category-drop">Фототехника</li>
-            </ul>
-            <ul data-lvl="70" class="cascader-list3">
-                <li class="category-name">Хобби и отдых</li>
-                <li data-id="82" class="category-drop">Билеты и путешествия</li>
-                <li data-id="83" class="category-drop">Велосипеды</li>
-                <li data-id="84" class="category-drop">Книги и журналы</li>
-                <li data-id="85" class="category-drop">Коллекционирование</li>
-                <li data-id="86" class="category-drop">Музыкальные инструменты</li>
-                <li data-id="87" class="category-drop">Охота и рыбалка</li>
-                <li data-id="88" class="category-drop">Спорт и отдых</li>
-            </ul>
-            <ul data-lvl="71" class="cascader-list3">
-                <li class="category-name">Животные</li>
-                <li data-id="89" class="category-drop">Собаки</li>
-                <li data-id="90" class="category-drop">Кошки</li>
-                <li data-id="91" class="category-drop">Птицы</li>
-                <li data-id="92" class="category-drop">Аквариум</li>
-                <li data-id="93" class="category-drop">Другие животные</li>
-                <li data-id="94" class="category-drop">Товары для животных</li>
-            </ul>
-            <ul data-lvl="72" class="cascader-list3">
-                <li class="category-name">Для бизнеса</li>
-                <li data-id="95" class="category-drop">Готовый бизнес</li>
-                <li data-id="96" class="category-drop">Оборудование для бизнеса</li>
-                <li data-id="97" class="category-drop">Промышленное оборудование</li>
-                <li data-id="98" class="category-drop">Реализация и закупки</li>
-                <li data-id="99" class="category-drop">Торговое оборудование</li>
-                <li data-id="100" class="category-drop">Услуги для бизнеса</li>
-            </ul>
+    </div>
+    <ul data-lvl="69" class="cascader-list3">
+        <li class="category-name">Бытовая электроника</li>
+        <li data-id="73" class="category-drop">Аксессуары и запчасти для электроники</li>
+        <li data-id="74" class="category-drop">Игры, приставки и программы</li>
+        <li data-id="75" class="category-drop">Настольные компьютеры</li>
+        <li data-id="76" class="category-drop">Ноутбуки</li>
+        <li data-id="77" class="category-drop">Оргтехника и расходники</li>
+        <li data-id="78" class="category-drop">Планшеты и электронные книги</li>
+        <li data-id="79" class="category-drop">Телефоны</li>
+        <li data-id="80" class="category-drop">Товары для компьютера</li>
+        <li data-id="81" class="category-drop">Фототехника</li>
+    </ul>
+    <ul data-lvl="70" class="cascader-list3">
+        <li class="category-name">Хобби и отдых</li>
+        <li data-id="82" class="category-drop">Билеты и путешествия</li>
+        <li data-id="83" class="category-drop">Велосипеды</li>
+        <li data-id="84" class="category-drop">Книги и журналы</li>
+        <li data-id="85" class="category-drop">Коллекционирование</li>
+        <li data-id="86" class="category-drop">Музыкальные инструменты</li>
+        <li data-id="87" class="category-drop">Охота и рыбалка</li>
+        <li data-id="88" class="category-drop">Спорт и отдых</li>
+    </ul>
+    <ul data-lvl="71" class="cascader-list3">
+        <li class="category-name">Животные</li>
+        <li data-id="89" class="category-drop">Собаки</li>
+        <li data-id="90" class="category-drop">Кошки</li>
+        <li data-id="91" class="category-drop">Птицы</li>
+        <li data-id="92" class="category-drop">Аквариум</li>
+        <li data-id="93" class="category-drop">Другие животные</li>
+        <li data-id="94" class="category-drop">Товары для животных</li>
+    </ul>
+    <ul data-lvl="72" class="cascader-list3">
+        <li class="category-name">Для бизнеса</li>
+        <li data-id="95" class="category-drop">Готовый бизнес</li>
+        <li data-id="96" class="category-drop">Оборудование для бизнеса</li>
+        <li data-id="97" class="category-drop">Промышленное оборудование</li>
+        <li data-id="98" class="category-drop">Реализация и закупки</li>
+        <li data-id="99" class="category-drop">Торговое оборудование</li>
+        <li data-id="100" class="category-drop">Услуги для бизнеса</li>
+    </ul>
     </div>
 
     <script src="/js/script.js"></script>
-
-
-</form>

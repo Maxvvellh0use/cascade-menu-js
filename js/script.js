@@ -16,7 +16,7 @@
         let mapElementsNone = blockElem.map(x => x.style.display = 'none');
         let noneElements = forElements.filter(x => x.dataset.lvl === targetElement.dataset.id);
         let mapElementsBlock = noneElements.map((x) => {
-                return [x.style.display = 'block', targetElement.className = 'category-drop-active'];
+                return [x.style.display = 'block'];
             }
         );
 
